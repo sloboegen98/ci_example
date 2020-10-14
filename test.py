@@ -8,20 +8,23 @@ class TestDot(unittest.TestCase):
         n = 3
         a = np.zeros((n, n), dtype=int)
         b = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+        c = mult(a, b) == np.dot(a, b)
 
-        self.assertTrue(mult(a, b) == np.dot(a, b))
+        self.assertTrue(c.all())
 
     def test2(self):
         a = 1010
         b = 12
+        c = mult(a, b) == np.dot(a, b)
 
-        self.assertTrue(mult(a, b) == np.dot(a, b))
+        self.assertTrue(c.all())
 
     def test3(self):
         a = [1, 2, 3, 4]
         b = [5, 6, 7, 8]
+        c = mult(a, b) == np.dot(a, b)
 
-        self.assertTrue(mult(a, b) == np.dot(a, b))
+        self.assertTrue(c.all())
         
 
 if __name__ == '__main__':
