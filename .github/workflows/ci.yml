@@ -3,11 +3,10 @@
 
 name: trololo
 
-on:
-  push:
-  pull_request:
-#   schedule:
-#     - cron: "30 9 * * *" # Runs at 9:30 everyday
+on: push
+#   pull_request:
+# #   schedule:
+# #     - cron: "30 9 * * *" # Runs at 9:30 everyday
 
 jobs:
   testMult:
