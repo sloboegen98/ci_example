@@ -6,7 +6,7 @@ from mult import mult
 class TestDot(unittest.TestCase):
     def test1(self):
         n = 3
-        a = np.ones((n, n))
+        a = np.zeros((n, n), dtype=int)
         b = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
         self.assertTrue(mult(a, b) == np.dot(a, b))
