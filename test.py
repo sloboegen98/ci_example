@@ -15,7 +15,7 @@ class TestDot(unittest.TestCase):
         a = 1010
         b = 12
 
-        self.assertTrue(mult(a, b) = np.dot(a, b))
+        self.assertTrue(mult(a, b) == np.dot(a, b))
 
     def test3(self):
         a = [1, 2, 3, 4]
